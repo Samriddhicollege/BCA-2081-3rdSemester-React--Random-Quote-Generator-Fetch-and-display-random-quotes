@@ -1,0 +1,278 @@
+/* FavoriteList.css */
+
+.favorite-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px 60px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 5;
+  position: relative;
+  user-select: none;
+}
+
+.favorite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.favorite-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.favorite-count {
+  background: rgba(246, 204, 57, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #b48600;
+  font-weight: 700;
+}
+
+.favorite-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 900px) {
+  .favorite-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+/* List Container */
+.favorite-list-container {
+  background: transparent;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px; /* For scrollbar */
+}
+
+/* Custom scrollbar for container */
+.favorite-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+.favorite-list-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.02);
+  border-radius: 4px;
+}
+.favorite-list-container::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--text-light);
+  padding: 60px 20px;
+  font-style: italic;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Favorite Item */
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 20px var(--shadow-color), 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.favorite-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px var(--shadow-color), 0 6px 10px rgba(0, 0, 0, 0.03);
+  border-color: var(--primary-yellow);
+}
+
+.favorite-content {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.favorite-quote {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.favorite-author {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Actions Row */
+.favorite-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.favorite-actions .action-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 0.95rem;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favorite-actions .action-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  border-color: var(--primary-yellow);
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Custom Quote Form */
+.add-custom-card {
+  background: var(--primary-yellow);
+  border-radius: 24px;
+  padding: 28px;
+  color: var(--text-dark);
+  box-shadow: 0 15px 35px rgba(246, 204, 57, 0.25);
+}
+
+.add-custom-card h3 {
+  margin: 0 0 24px 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(28, 31, 50, 0.8);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--text-dark);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(28, 31, 50, 0.1);
+}
+
+.error-text {
+  color: #be123c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* UI Button CSS */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+}
+
+.custom-btn.full-width {
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--text-dark);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

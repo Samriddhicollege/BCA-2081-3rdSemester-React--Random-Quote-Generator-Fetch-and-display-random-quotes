@@ -1,0 +1,44 @@
+.quote-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  background: #fffbe6;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #f5a623;
+}
+
+button {
+  background-color: #f5a623;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quote-box {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.actions button, .actions a {
+  margin-right: 0.5rem;
+}
+
+.motivational-sidebar {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #888;
+}
