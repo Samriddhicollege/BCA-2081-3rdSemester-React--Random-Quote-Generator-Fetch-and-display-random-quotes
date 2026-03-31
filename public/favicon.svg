@@ -1,0 +1,14 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Left Block -->
+  <rect width="16" height="16" rx="3" fill="#F6CC39"/>
+  
+  <!-- Top Right Group (Inverted L) -->
+  <path d="M24 3C24 1.34315 25.3431 0 27 0H54C62.8366 0 70 7.16344 70 16V37C70 38.6569 68.6569 40 67 40C65.3431 40 64 38.6569 64 37V16C64 10.4772 59.5228 6 54 6H27C25.3431 6 24 4.65685 24 3Z" fill="#F6CC39"/>
+  <rect x="24" y="0" width="37" height="12" rx="3" fill="#F6CC39"/>
+  <rect x="52" y="0" width="12" height="40" rx="3" fill="#F6CC39"/>
+  
+  <!-- Bottom Left Group (L shape) -->
+  <path d="M0 27C0 25.3431 1.34315 24 3 24C4.65685 24 6 25.3431 6 27V54C6 59.5228 10.4772 64 16 64H57C58.6569 64 60 65.3431 60 67C60 68.6569 58.6569 70 57 70H16C7.16344 70 0 62.8366 0 54V27Z" fill="#F6CC39"/>
+  <rect x="0" y="24" width="12" height="37" rx="3" fill="#F6CC39"/>
+  <rect x="0" y="48" width="60" height="16" rx="3" fill="#F6CC39"/>
+</svg>
