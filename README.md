@@ -1,16 +1,63 @@
-# React + Vite
+Project Title
+Random Quote Generator Using API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Student Information
+Name: Hemanta Raj Bhatta
 
-Currently, two official plugins are available:
+Roll Number: 10
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Course / Program: React Development
 
-## React Compiler
+Semester / Year: 3rd Semester
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instructor Information
+Instructor Name: Mr. Dipak Shrestha
 
-## Expanding the ESLint configuration
+Course Title: React Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+College Name: Samriddhi College
+
+Project Overview
+This project is a dynamic, web-based Random Quote Generator developed entirely using React on the frontend. It fetches motivational and wisdom quotes from an external API and displays them instantly. Users can generate new quotes, copy them, share them on social media, and save favorites locally. The system leverages LocalStorage to provide a persistent CRUD experience for managing saved quotes. The main goal is to deliver an accessible, user-friendly tool for students, writers, and enthusiasts seeking daily inspiration.
+
+Objectives
+Build a minimal, mobile-responsive React application
+
+Implement clean, component-based UI architecture
+
+Handle API requests and state management using React hooks
+
+Integrate native browser functionality like LocalStorage seamlessly
+
+Technologies Used
+Frontend
+
+React.js (Bootstrapped with Vite)
+
+JavaScript (ES6+)
+
+HTML5 & CSS3
+
+Storage & APIs
+
+Client-side LocalStorage (Persistent State)
+
+External Quote API (Fetch integration)
+
+Other Tools
+
+Git & GitHub
+
+Key Features
+Fetch random quotes from API (wisdom, success, motivational categories)
+
+Full LocalStorage CRUD implementation (Create, Read, Update, Delete) for favorite quotes
+
+State Management with React hooks (useState, useEffect)
+
+Responsive UI Design reflecting modern minimalist aesthetics
+
+Screens / Modules
+Main Quote Hub (Generate and display quotes)
+
+Favorites Panel (Saved quotes with editing options)
